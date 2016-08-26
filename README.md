@@ -1,5 +1,5 @@
 # Social Fork Analysis
-A social network analysis toolkit is actively being designed to create an easy to use data set for journalists and researchers interested in exploring the affects of social media on the decision making process of the Ethereum community.
+A social network analysis toolkit actively being designed to create an easy to use data set for journalists and researchers interested in exploring the affects of social media on the decision making process of the Ethereum community.
 
 **Scrape Tools: extracting and saving data**
 
