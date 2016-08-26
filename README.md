@@ -2,10 +2,15 @@
 A social network analysis toolkit is actively being designed to create an easy to use data set for journalists and researchers interested in exploring the affects of social media on the decision making process of the Ethereum community.
 
 **Scrape Tools: extracting and saving data**
+
 The scape tools included with this repository is designed to easily:
+
   (1) GET data from relevant social media servers,
+  
   (2) extract data from the DOM, and
+  
   (3) compile relevant data into simple data structures.
+  
 
 The scraping tools search defined social media networks, filtering relevant content created by the Ethereum community between:
 
