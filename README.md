@@ -14,7 +14,7 @@ The scape tools included with this repository is designed to easily:
 
 The scraping tools search defined social media networks, filtering relevant content created by the Ethereum community between:
 
-    Time.new((DAO Catastrophe) - 7) until Time.now
+    Time.new((DAO Catastrophe) - 7.days)) =< social_data < Time.now
   
 Relevant content is extracted from the DOM and stored in a simple structure. 
 
