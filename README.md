@@ -1,7 +1,15 @@
 # Social Fork Analysis
-A social network analysis toolkit actively being designed to create an easy to use data set for journalists and researchers interested in exploring the affects of social media on the decision making process of the Ethereum community.
+A social network analysis is a recommended collection of tools being used to create a saved state of the all public social media data relating to the Ethereum hard-fork. The goal is to create an easy to use data set for journalists and researchers interested in exploring the affects of social media on the decision making process of the Ethereum community.
 
-**Scrape Tools: extracting and saving data**
+By creating a saved state, we can guarantee access to the primary source material that has not yet been edited or deleted so that future research, stories and investigations do not have to rely on what on biased articles published by cryptocurrency websites with low quality standards.
+
+#### Toolkit: Scraping & Storage
+If we all agree to use the same set of easy to use tools, we can easily collaborate and combine our results. 
+
+*Open source database**
+It would be easier regardless of whatever scraping tool you decide to use, that you store the extracted data within simple data structures inside a LevelDB snapshot.
+
+#### Overview: Extracting and saving data
 
 The scape tools included with this repository is designed to easily:
 
@@ -9,7 +17,7 @@ The scape tools included with this repository is designed to easily:
   
   (2) extract data from the DOM, and
   
-  (3) compile relevant data into simple data structures.
+  (3) compile relevant data into simple data structures and store them within a LevelDB snapshot.
   
 
 The scraping tools search defined social media networks, filtering relevant content created by the Ethereum community between:
