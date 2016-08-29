@@ -4,10 +4,17 @@ A social network analysis is a recommended collection of tools being used to cre
 By creating a saved state, we can guarantee access to the primary source material that has not yet been edited or deleted so that future research, stories and investigations do not have to rely on what on biased articles published by cryptocurrency websites with low quality standards.
 
 #### Toolkit: Scraping & Storage
-If we all agree to use the same set of easy to use tools, we can easily collaborate and combine our results. 
+If we all agree to use the same set of easy to use tools early on, later we will be able to easily combine our scraping efforts. 
 
-*Open source database**
-**LevelDB** is the tool we will be using to store our data. Regardless of whatever scraping tool you decide to use, stroing the extracted social media data within simple data structures inside a LevelDB snapshot will allow us to easily create scripts to combine and organize all collected data. Once combined we can migrate the to a format that can be easily used with R for statistical analysis or migrated to an accessible full-text Lucene based search like Elastic to provide convient access to journalists and other researchers.
+**Open source database**
+
+**[LevelDB](https://github.com/DAddYE/leveldb)** is the tool we will be using to store our data. Regardless of whatever scraping tool you decide to use, stroing the extracted social media data within simple data structures inside a LevelDB snapshot will allow us to easily create scripts to combine and organize all collected data. 
+
+[DAddYE's full Ruby implementation of LevelDB](https://github.com/DAddYE/leveldb)
+
+
+
+Once combined we can migrate the to a format that can be easily used with R for statistical analysis or migrated to an accessible full-text Lucene based search like Elastic to provide convient access to journalists and other researchers.
 
 The advantage of using LevelDB is that a version exist written completely in Ruby meaning that the install process is as simple as installing any gem. It does not require the same setup process as full featured
 
