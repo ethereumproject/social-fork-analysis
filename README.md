@@ -8,9 +8,11 @@ By creating a saved state, we can guarantee access to the primary source materia
 To start you will want to first pull down the git repository and install ruby.
 
 ````
-// If you do not yet have git
-~/>sudo apt-get install git-core 
-~/>git clone
+// If you do not yet have git or vim
+
+~/>sudo apt-get install git-core vim
+~/>git clone https://github.com/ethereumproject/social-fork-analysis.git
+~/>cd social-fork-analysis
 
 
 
