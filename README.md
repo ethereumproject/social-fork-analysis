@@ -44,13 +44,13 @@ This software was initialized to create tools to faciliate research for an artic
 
 ### Development progress
 
-| Social Media  | Contributors  | % Completed  |
-| ------------- |:-------------:| ----------:|
-| reddit.com       | n/a  | 0%         |
-| twitter.com      | n/a      | 0%         |
-| github.com | n/a      | 0%         |
+| Social Media  | Contributors     | % Completed|
+| ------------- |:----------------:|:----------:|
+| reddit.com    | wig              | 5%         |
+| twitter.com   | n/a              | 0%         |
+| github.com    | n/a              | 0%         |
 
-*Are you interested in volunteering to build tools for journalists and researchers?*
-*Use the table below to determine: what needs to be done, where you are capable of contributing and add your name to the cell. Two and more volunteers can work on the same script, add your name using a comma separation.*
+*Are you interested in volunteering to prevent historic resources are kept intact by building data-sets for journalists and researchers?*
+*Use the table below to determine: what needs to be done, where you are capable of contributing and add your name to the cell. More than two volunteers can work on the same script, add your name using a comma separation.*
 
 *If the scripts are built in a modular way, they can be improved and expanded to work for other events were social media data may be important.*
