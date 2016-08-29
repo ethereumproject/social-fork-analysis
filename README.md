@@ -7,7 +7,9 @@ By creating a saved state, we can guarantee access to the primary source materia
 If we all agree to use the same set of easy to use tools, we can easily collaborate and combine our results. 
 
 *Open source database**
-It would be easier regardless of whatever scraping tool you decide to use, that you store the extracted data within simple data structures inside a LevelDB snapshot.
+**LevelDB** is the tool we will be using to store our data. Regardless of whatever scraping tool you decide to use, stroing the extracted social media data within simple data structures inside a LevelDB snapshot will allow us to easily create scripts to combine and organize all collected data. Once combined we can migrate the to a format that can be easily used with R for statistical analysis or migrated to an accessible full-text Lucene based search like Elastic to provide convient access to journalists and other researchers.
+
+The advantage of using LevelDB is that a version exist written completely in Ruby meaning that the install process is as simple as installing any gem. It does not require the same setup process as full featured
 
 #### Overview: Extracting and saving data
 
