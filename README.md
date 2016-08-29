@@ -3,6 +3,17 @@ A social network analysis is a recommended collection of tools being used to cre
 
 By creating a saved state, we can guarantee access to the primary source material that has not yet been edited or deleted so that future research, stories and investigations do not have to rely on what on biased articles published by cryptocurrency websites with low quality standards.
 
+### Getting started
+*Guide assumes you are using Debian/Ubuntu flavor of Linux but the package names used to install are typically the same. If they are not, use tab complete or search the internet for how to install the package on your operating system.*
+To start you will want to first pull down the git repository and install ruby.
+
+````
+// If you do not yet have git
+~/>sudo apt-get install git-core 
+~/>git clone
+
+
+
 #### Toolkit: Scraping & Storage
 If we all agree to use the same set of easy to use tools early on, later we will be able to easily combine our scraping efforts. 
 
@@ -12,7 +23,14 @@ If we all agree to use the same set of easy to use tools early on, later we will
 
 [DAddYE's full Ruby implementation of LevelDB](https://github.com/DAddYE/leveldb)
 
+**Installing Ruby LevelDB**
 
+````
+~/> brew install snappy
+~/> gem install leveldb
+~/>
+irb -r leveldb
+````
 
 Once combined we can migrate the to a format that can be easily used with R for statistical analysis or migrated to an accessible full-text Lucene based search like Elastic to provide convient access to journalists and other researchers.
 
