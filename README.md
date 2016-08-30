@@ -30,9 +30,8 @@ ruby -v
 // Now you can install the database using the instructions below
 ````
 
-
 #### Toolkit: Scraping & Storage
-If we all agree to use the same set of easy to use tools early on, later we will be able to easily combine our scraping efforts. 
+I'm going to be using Ruby for this project, but everyone is welcome to use whatever tools they like. I recommend using easier, higher level programming languages so this project is easy to contribute to. Long as everyone uses the same database, LevelD it will make combining our datasets together easier later. 
 
 **Scraping tools**
 It is recommended that you use either Ruby mechanize or a ready-only API client (use Github search, example `reddit read only api`). Once you decide on which to use, you can install the gem (the term used for libraries) and setup the database and start scripting. 
@@ -75,8 +74,6 @@ The easiest solution is to simply use the large library of existing APIs for soc
 
 
 ````
-
-
 
 **Open source database**
 
