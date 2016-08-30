@@ -130,6 +130,23 @@ The advantage of using LevelDB is that a version exist written completely in Rub
 
 
 #### Overview: Extracting and saving data
+The goal is to create an time line of available data public social data that help inform the public perception of the events. 
+
+
+
+````
+
+// DAO Hack Timeline
+// 
+time_of_hack     =  "6/17/2016 3:34:48 UTC"
+
+ether_transfered = 3,641,694 
+percent_of_all_ether_transferred = 31.6%
+
+hacker’s main account +0x969837498944ae1dc0dcac2d0c65634c88729b2d
+
+````
+
 
 The scape tools included with this repository is designed to easily:
 
