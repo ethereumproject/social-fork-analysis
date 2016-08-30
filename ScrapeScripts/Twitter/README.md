@@ -4,8 +4,8 @@ Using Tweepy (https://tweepy.readthedocs.io/en/v3.5.0/index.html) and Plyvel (ht
 
 System install of LevelDB required.
 
-````apt-get install libleveldb1 libleveldb-dev
+    apt-get install libleveldb1 libleveldb-dev
 
-````pip3 install tweepy plyvel
+    pip3 install tweepy plyvel
 
 
