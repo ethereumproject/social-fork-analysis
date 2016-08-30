@@ -14,10 +14,70 @@ To start you will want to first pull down the git repository and install ruby.
 ~/>git clone https://github.com/ethereumproject/social-fork-analysis.git
 ~/>cd social-fork-analysis
 
+// Install Ruby using RVM (manages multiple ruby installations) or using package manager
+// since the Ruby versions in the package manager are now 2+
+
+// RVM Method
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -sSL https://get.rvm.io | bash -s stable --ruby
+
+// Package manager
+sudo apt-get install ruby
+
+// Check Ruby install
+ruby -v
+
+// Now you can install the database using the instructions below
+````
 
 
 #### Toolkit: Scraping & Storage
 If we all agree to use the same set of easy to use tools early on, later we will be able to easily combine our scraping efforts. 
+
+**Scraping tools**
+It is recommended that you use either Ruby mechanize or a ready-only API client (use Github search, example `reddit read only api`). Once you decide on which to use, you can install the gem (the term used for libraries) and setup the database and start scripting. 
+
+
+#### Using Mechanize
+````
+// Mechanize is a general purpose tool that can be used to access web sites
+// that function without javascript enabled.
+
+// Documentation: http://www.rubydoc.info/gems/mechanize/Mechanize/Page
+//                http://mechanize.rubyforge.org/EXAMPLES_rdoc.html
+
+gem install mechanize
+
+cd Reddit
+vim reddit_scrape.rb
+// Read the docs and start coding
+````
+
+#### Using social media API Wrappers
+The easiest solution is to simply use the large library of existing APIs for social media.
+````
+// Twitter API 
+
+// Libraries
+// https://github.com/sferik/twitter
+// https://github.com/dbrown/twitter-search
+// https://github.com/hayesdavis/grackle
+
+// Reddit API
+// Please add suggestions and make a pull request
+
+// Git API
+// Please add suggestions and make a pull request
+
+
+// Other relevant social media? 
+// Please add other relevant social media, recommended libraries
+// and make a pull request
+
+
+````
+
+
 
 **Open source database**
 
@@ -30,13 +90,44 @@ If we all agree to use the same set of easy to use tools early on, later we will
 ````
 ~/> brew install snappy
 ~/> gem install leveldb
-~/>
-irb -r leveldb
+~/> cd ScrapeScripts
+~/> cd Reddit
+~/> vim reddit_scrape.rb
+
+db = LevelDB::DB.new './../Data'
+
+# Writing
+db.put('hello', 'world')
+db['hello'] = 'world'
+
+# Reading/Writing
+db.fetch('hello', 'hello world') # => will write 'hello world' if there is no key 'hello'
+db.fetch('hello'){ |key| 'hello world' } # => same as above
+
+# Deleting
+db.delete('hello')
+
+# When you are done write data to file!
+b.write!
+
+cd ../../ && git add . && git commit -m "New data"
+
+// Fork on the page
+git remote rm origin 
+// Use your fork git url
+git remote add origin <your-git-url>
+git push origin master
+
+// Then issue a pull request to add your data to the collection
+
 ````
 
 Once combined we can migrate the to a format that can be easily used with R for statistical analysis or migrated to an accessible full-text Lucene based search like Elastic to provide convient access to journalists and other researchers.
 
 The advantage of using LevelDB is that a version exist written completely in Ruby meaning that the install process is as simple as installing any gem. It does not require the same setup process as full featured
+
+###
+
 
 #### Overview: Extracting and saving data
 
