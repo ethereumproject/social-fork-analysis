@@ -50,6 +50,6 @@ build-iPhoneSimulator/
 .rvmrc
 
 #vim
-.swp
-.swo
-
+*.swp
+*.swo
+config.json
