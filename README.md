@@ -48,8 +48,7 @@ It is recommended that you use either Ruby mechanize or a ready-only API client 
 
 gem install mechanize
 
-cd Reddit
-vim reddit_scrape.rb
+cd Reddit/reddit_scrape.rb
 // Read the docs and start coding
 ````
 
@@ -88,7 +87,7 @@ The easiest solution is to simply use the large library of existing APIs for soc
 **Installing Ruby LevelDB**
 
 ````
-~/> brew install snappy
+
 ~/> gem install leveldb
 ~/> cd ScrapeScripts
 ~/> cd Reddit
@@ -110,15 +109,10 @@ db.delete('hello')
 # When you are done write data to file!
 b.write!
 
-cd ../../ && git add . && git commit -m "New data"
-
-// Fork on the page
-git remote rm origin 
-// Use your fork git url
-git remote add origin <your-git-url>
-git push origin master
-
-// Then issue a pull request to add your data to the collection
+// Create a fork or a new branch
+// and push your changes to your new branch 
+// then issue a pull request to add your data
+// to the collection
 
 ````
 
