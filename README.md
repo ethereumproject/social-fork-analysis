@@ -159,7 +159,7 @@ Are you interested in volunteering to guarantee that important primary resources
 | Social Media        | Contributors     | % Completed|
 | ------------------- |:----------------:|:----------:|
 | reddit.com          | wig              | 5%         |
-| twitter.com         | n/a              | 0%         |
+| twitter.com         | kimi             | 0%         |
 | github.com          | n/a              | 0%         |
 | forum.daohub.org    | n/a              | 0%         |
 
