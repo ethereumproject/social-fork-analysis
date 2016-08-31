@@ -37,6 +37,15 @@ ruby -v
 #### Data extraction 
 One of the easiest ways to approach data extraction, or data scraping from social media is to either the library mechanize which exists for Ruby, Python or Perl, or alternatively a ready-only API client (use Github search, example `reddit read only api`). Once you decide on which library, referred to as a gem in Ruby, one just needs to install the library and start scripting. 
 
+##### What data is important?
+Deciding which data is important for archival purposes is up to the citizen journalist doing the extracting, combining these different perspectives together allows us to create a complete as possible data set for later use.
+
+Citizen journalists can decide what content to filter out of the social media content created by the Ethereum community between:
+
+````
+Time.new((DAO Catastrophe) - 7.days)) =< social_data < Time.now
+````
+
 ##### Using Mechanize
 ````
 # Mechanize is a general purpose tool that can be used to access web sites
