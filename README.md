@@ -166,7 +166,7 @@ This software was initialized to create tools to faciliate research for an artic
 | Social Media  | Contributors     | % Completed|
 | ------------- |:----------------:|:----------:|
 | reddit.com    | wig              | 5%         |
-| twitter.com   | n/a              | 0%         |
+| twitter.com   | Kimi             | 0%         |
 | github.com    | n/a              | 0%         |
 
 *Are you interested in volunteering to prevent historic resources are kept intact by building data-sets for journalists and researchers?*
