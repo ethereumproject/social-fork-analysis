@@ -43,7 +43,21 @@ Deciding which data is important for archival purposes is up to the citizen jour
 Citizen journalists can decide what content to filter out of the social media content created by the Ethereum community between:
 
 ````
-Time.new((DAO Catastrophe) - 7.days)) =< social_data < Time.now
+# The fork was prompted by
+# an exploit used in a contract
+
+# First use of DAO exploit was 6/17/2016 3:34:48 UTC
+# Unix time 
+time_of_first_dao_exploit = 1466134488
+# Seven days in unix time
+7_days = (60 * 60 * 24 * 7)
+
+# If created before now OR created after
+# the seven days prior to the first exploit
+if social_data.created_at < Time.now ||
+  Time.new((time_of_first_dao_exploit) - 7_days)) =< social_data.created_at
+  # Extract and save data
+end
 ````
 
 ##### Using Mechanize
