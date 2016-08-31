@@ -1,0 +1,13 @@
+GEM
+  specs:
+    fiddler-rb (0.1.2)
+    json (1.8.3)
+    leveldb (0.1.9)
+      fiddler-rb (~> 0.1.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  json
+  leveldb

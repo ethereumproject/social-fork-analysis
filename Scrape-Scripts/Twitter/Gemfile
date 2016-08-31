@@ -1,0 +1,4 @@
+# Ruby Scraper Gemfile
+
+gem "leveldb"
+gem "json"
