@@ -125,28 +125,23 @@ Tweets.each_with_index do |tweet, index|
 end
 ````  
 
-
 ##### After data has been collected
 
 Once collected data is combined we can migrate the to a format and build simple scripts so that it that can be easily used with R for statistical analysis or migrated to an accessible full-text Lucene based search like Elastic to provide convient access to journalists, citizen journalists and other researchers.
 
 
-### Citizen journalism progress
+### Citizen journalism collaborative progress
 Are you interested in volunteering to guarantee that important primary resources are kept intact by building data-sets for journalists and researchers? Use the table to determine: what needs to be done, and sign up to a task you are capable of contributing to. Once you decide add your name to the cell, more than two volunteers can work on the same social media as they are likely to prioritize different relevant content.
 
-| Social Media  | Contributors     | % Completed|
-| ------------- |:----------------:|:----------:|
-| reddit.com    | wig              | 5%         |
-| twitter.com   | n/a              | 0%         |
-| github.com    | n/a              | 0%         |
+| Social Media        | Contributors     | % Completed|
+| ------------------- |:----------------:|:----------:|
+| reddit.com          | wig              | 5%         |
+| twitter.com         | n/a              | 0%         |
+| github.com          | n/a              | 0%         |
+| forum.daohub.org    | n/a              | 0%         |
 
 
 
-
-## Save the state of public data
-The primary purpose is to ensure a reliable saved state of all the relevant social media data exists and is freely available before social media content can be further modified or deleted. 
-
-This software was initialized to create tools to faciliate research for an article I'm writing. Using hindsight clarity, the article looks back over the events, attempts to identify patterns and chronicle the events accurately as possible from the perspective of a unaffiliated but active developer.
 
 
 
