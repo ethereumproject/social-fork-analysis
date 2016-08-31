@@ -27,12 +27,14 @@ def limit_handled(cursor):
     while True:
         try:
             yield cursor.next()
-        except tweepy.RateLimitError:
+        except tweepy.RateLimitError as error:
             print('RateLimitError')
-            time.sleep(60)
-        except tweepy.TweepError:
+            print(error)
+            time.sleep(60 * 5)
+        except tweepy.TweepError as error:
             print('tweepy.TweepError')
-            time.sleep(60)
+            print(error)
+            time.sleep(60 * 5)
 
 def write_to_tweet_db(status):
     tweet_dict = {'place': status._json['place'],
@@ -88,5 +90,8 @@ if __name__ == '__main__':
                     if not user_db.get(bytes(status.author.id_str, 'utf-8')): 
                         print('Saving user: %s' % status.author.id_str)
                         write_to_user_db(status.author)
+                else:
+                    print('Reached %s, on to the next user' % status.created_at.strftime('%Y %h %d %H:%M:%S'))
+                    break
 
 
