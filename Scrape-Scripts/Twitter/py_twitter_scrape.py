@@ -6,6 +6,13 @@ import tweepy
 user_db = plyvel.DB('../../Data/Twitter/Users', create_if_missing=True)
 tweet_db = plyvel.DB('../../Data/Twitter/Tweets', create_if_missing=True)
 
+hashtags = []
+user_file = open('hashtags', 'r')
+for hashtag in user_file:
+    hashtags.append(hashtag.strip())
+
+print(hashtags)
+
 users = []
 user_file = open('users', 'r')
 for user in user_file:
@@ -71,18 +78,16 @@ def write_to_user_db(user):
         'geo_enabled': user.geo_enabled}
     user_db.put(bytes(user.id_str, 'utf-8'), bytes(json.dumps(user_dict), 'utf-8'))
 
-
-if __name__ == '__main__':
-    keys = import_keys_from_config()
-    auth = tweepy.OAuthHandler(keys['consumer_key'], keys['consumer_secret'])
-    auth.set_access_token(keys['access_token'], keys['access_token_secret'])
-
-    api = tweepy.API(auth)
-
-    for user in users:
-        print('Crawling %s' % user)
-        for status in limit_handled(tweepy.Cursor(api.user_timeline, 
-            id=user).items()):
+def crawl_target(api, target_type, target_list):
+    for target in target_list:
+        if target_type == 'user':
+            statuses = limit_handled(tweepy.Cursor(api.user_timeline,
+                id=target).items())
+        elif target_type == 'hashtag':
+            statuses = limit_handled(tweepy.Cursor(api.search,
+                target).items())
+        print('Crawling %s' % target)
+        for status in statuses:
                 if status.created_at.timestamp() > catastrophe_period_start:
                     if not tweet_db.get(bytes(status.id_str, 'utf-8')):
                         print('Saving tweet: %s' % status.id_str)
@@ -91,7 +96,16 @@ if __name__ == '__main__':
                         print('Saving user: %s' % status.author.id_str)
                         write_to_user_db(status.author)
                 else:
-                    print('Reached %s, on to the next user' % status.created_at.strftime('%Y %h %d %H:%M:%S'))
+                    print('Reached {time}, on to the next {ttype}'.format(time=status.created_at.strftime('%Y %h %d %H:%M:%S'), ttype=target_type))
                     break
 
+if __name__ == '__main__':
+    keys = import_keys_from_config()
+    auth = tweepy.OAuthHandler(keys['consumer_key'], keys['consumer_secret'])
+    auth.set_access_token(keys['access_token'], keys['access_token_secret'])
+
+    api = tweepy.API(auth)
+
+    crawl_target(api, 'hashtag', hashtags)
+    crawl_target(api, 'user', users)
 
