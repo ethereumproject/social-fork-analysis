@@ -1,5 +1,5 @@
 # Ethereum Classic Tweets Scraping / elasticsearch
-![Image of Yaktocat](http://i.imgur.com/Omou0Pt.png)
+![Image of Yaktocat](http://i.imgur.com/m2UaJhJ.png)
 
 After downloading the latest elasticsearch release
 ```sh
@@ -51,6 +51,14 @@ Run `compile_twitter.js`
 $ node compile_twitter.js
 ```
 
+if you have meet some error messages, like
+```
+Error("Tweets at this interval over 100 counts, need to re-snapshot!");
+```
+it mean the captured Tweets are over 100, but the Twitter API only send 100 Tweets back.
+You need to re-adjust the Setting1's step smaller to ensure captured tweets are below 100.
+the console will also show the currently tweet id index, you can restart the script from last interrupt.
+
 
 ### Datasets
 Please install **elasticsearch-dump**, more information please check below link
@@ -63,5 +71,6 @@ $ elasticdump --input=/home/{your User Name}/{your data foler}/etc20160926.json 
 
 #####  etc20160926.json
 https://mega.nz/#!A1gigBTL
-[Key]
+[Key]  
 !DpD5kqiO9DefaBl1hBvjFWv26d5KH1RrH9E8susHtfk
+
