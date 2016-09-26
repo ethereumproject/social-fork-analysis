@@ -1,11 +1,12 @@
-# Twitter Scraping / elasticsearch
+
+# Ethereum Classic Tweets Scraping / elasticsearch
 
 After downloading the latest elasticsearch release
 ```sh
 $ bin/elasticsearch
 ```
 
-Twitter Scraping install instructions
+Ethereum Classic Tweets Scraping install instructions
 
 Install Babel
 ```sh
@@ -40,3 +41,18 @@ Run `compile_twitter.js`
 ```sh
 $ node compile_twitter.js
 ```
+
+
+### Datasets
+Please install **elasticsearch-dump**, more information please check below link
+https://github.com/taskrabbit/elasticsearch-dump
+
+After installed and **download the test datasets**, please Run
+```sh
+$ elasticdump --input=/home/{your User Name}/{your data foler}/etc20160926.json --output=http://127.0.0.1:9200/{your index} --type=data
+```
+
+#####  etc20160926.json
+https://mega.nz/#!A1gigBTL
+Key
+!DpD5kqiO9DefaBl1hBvjFWv26d5KH1RrH9E8susHtfk
