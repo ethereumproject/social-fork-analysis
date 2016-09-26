@@ -63,5 +63,5 @@ $ elasticdump --input=/home/{your User Name}/{your data foler}/etc20160926.json 
 
 #####  etc20160926.json
 https://mega.nz/#!A1gigBTL
-Key
+[Key]  
 !DpD5kqiO9DefaBl1hBvjFWv26d5KH1RrH9E8susHtfk
