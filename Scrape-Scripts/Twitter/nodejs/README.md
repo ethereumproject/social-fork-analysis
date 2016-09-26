@@ -1,4 +1,3 @@
-
 # Ethereum Classic Tweets Scraping / elasticsearch
 
 After downloading the latest elasticsearch release
@@ -26,7 +25,7 @@ Modify `twitter.js`
 ```sh
 $ nano twitter.js
 ```
-Setting
+Setting1
 ```
 read({
         index : "etc",  // elasticsearch index
@@ -35,6 +34,15 @@ read({
         max_id : 876208908763340800,  // twitter API max_id
         step:50000000000000  // query tweets ID range
     });
+```
+Setting2
+```
+var client = new Twitter({
+    consumer_key: TWITTER_CONSUMER_KEY,
+    consumer_secret: TWITTER_CONSUMER_SECRET,
+    access_token_key: TWITTER_ACCESS_TOKEN_KEY,
+    access_token_secret: TWITTER_ACCESS_TOKEN_SECRET
+});
 ```
 
 Run `compile_twitter.js`
@@ -54,5 +62,5 @@ $ elasticdump --input=/home/{your User Name}/{your data foler}/etc20160926.json 
 
 #####  etc20160926.json
 https://mega.nz/#!A1gigBTL
-[Key]  
+Key
 !DpD5kqiO9DefaBl1hBvjFWv26d5KH1RrH9E8susHtfk
