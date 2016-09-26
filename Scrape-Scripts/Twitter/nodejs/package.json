@@ -1,0 +1,19 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scrape_to_es.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-stage-3": "^6.11.0"
+  },
+  "dependencies": {
+    "elasticsearch": "^11.0.1",
+    "moment": "^2.15.1",
+    "twitter": "^1.4.0"
+  }
+}
