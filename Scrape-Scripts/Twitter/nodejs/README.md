@@ -1,4 +1,5 @@
 # Ethereum Classic Tweets Scraping / elasticsearch
+![Image of Yaktocat](http://i.imgur.com/m2UaJhJ.png)
 
 After downloading the latest elasticsearch release
 ```sh
