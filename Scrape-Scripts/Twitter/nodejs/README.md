@@ -1,6 +1,11 @@
-# Twitter Search
+# Twitter Scraping / elasticsearch
 
-install instructions
+After downloading the latest elasticsearch release
+```sh
+$ bin/elasticsearch
+```
+
+Twitter Scraping install instructions
 
 Install Babel
 ```sh
@@ -35,4 +40,3 @@ Run `compile_twitter.js`
 ```sh
 $ node compile_twitter.js
 ```
-
