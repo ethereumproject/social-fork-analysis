@@ -1,5 +1,5 @@
 # Ethereum Classic Tweets Scraping / elasticsearch
-![Image of Yaktocat](http://i.imgur.com/m2UaJhJ.png)
+![Image of Yaktocat](http://i.imgur.com/Omou0Pt.png)
 
 After downloading the latest elasticsearch release
 ```sh
@@ -63,5 +63,5 @@ $ elasticdump --input=/home/{your User Name}/{your data foler}/etc20160926.json 
 
 #####  etc20160926.json
 https://mega.nz/#!A1gigBTL
-[Key]  
+[Key]
 !DpD5kqiO9DefaBl1hBvjFWv26d5KH1RrH9E8susHtfk
